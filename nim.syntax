@@ -1,0 +1,168 @@
+
+context default
+# reserved words (except operators)
+    keyword whole addr yellow
+    keyword whole as yellow
+    keyword whole asm yellow
+    keyword whole bind yellow
+    keyword whole block yellow
+    keyword whole break yellow
+    keyword whole case yellow
+    keyword whole cast yellow
+    keyword whole concept yellow
+    keyword whole const yellow
+    keyword whole continue yellow
+    keyword whole converter yellow
+    keyword whole defer yellow
+    keyword whole discard yellow
+    keyword whole distinct yellow
+    keyword whole do yellow
+    keyword whole elif yellow
+    keyword whole else yellow
+    keyword whole enum yellow
+    keyword whole except yellow
+    keyword whole export yellow
+    keyword whole finally yellow
+    keyword whole for yellow
+    keyword whole from yellow
+    keyword whole func yellow
+    keyword whole if yellow
+    keyword whole import yellow
+    keyword whole in yellow
+    keyword whole include yellow
+    keyword whole interface yellow
+    keyword whole is yellow
+    keyword whole isnot yellow
+    keyword whole iterator yellow
+    keyword whole let yellow
+    keyword whole macro yellow
+    keyword whole method yellow
+    keyword whole mixin yellow
+    keyword whole nil yellow
+    keyword whole notin yellow
+    keyword whole object yellow
+    keyword whole of yellow
+    keyword whole out yellow
+    keyword whole proc yellow
+    keyword whole ptr yellow
+    keyword whole raise yellow
+    keyword whole ref yellow
+    keyword whole return yellow
+    keyword whole static yellow
+    keyword whole template yellow
+    keyword whole try yellow
+    keyword whole tuple yellow
+    keyword whole type yellow
+    keyword whole using yellow
+    keyword whole var yellow
+    keyword whole when yellow
+    keyword whole with yellow
+    keyword whole while yellow
+    keyword whole yield yellow
+
+# builtin types (primitive)
+    keyword whole bool brightred
+    keyword whole char brightred
+    keyword whole float brightred
+    keyword whole float32 brightred
+    keyword whole float64 brightred
+    keyword whole int brightred
+    keyword whole int8 brightred
+    keyword whole int16 brightred
+    keyword whole int32 brightred
+    keyword whole int64 brightred
+    keyword whole uint brightred
+    keyword whole uint8 brightred
+    keyword whole uint16 brightred
+    keyword whole uint32 brightred
+    keyword whole uint64 brightred
+    keyword whole string brightred
+    keyword whole pointer brightred
+    keyword whole cint brightred
+    keyword whole clong brightred
+
+# builtin types (containers / collections)
+    keyword whole array brightred
+    keyword whole openArray brightred
+    keyword whole seq brightred
+    keyword whole range brightred
+    keyword whole set brightred
+    keyword whole varargs brightred
+
+# operators
+    keyword whole and brightcyan
+    keyword whole or brightcyan
+    keyword whole xor brightcyan
+    keyword whole not brightcyan
+    keyword whole div brightcyan
+    keyword whole mod brightcyan
+    keyword whole shl brightcyan
+    keyword whole shr brightcyan
+    keyword \+ brightcyan
+    keyword - brightcyan
+    keyword \* brightcyan
+    keyword / brightcyan
+    keyword > brightcyan
+    keyword < brightcyan
+    keyword >= brightcyan
+    keyword <= brightcyan
+    keyword == brightcyan
+    keyword != brightcyan
+    keyword $ brightcyan
+    keyword & brightcyan
+    keyword = brightcyan
+
+    keyword #[ brown
+    keyword ]# brown
+
+# punctuation
+    keyword ( brightcyan
+    keyword ) brightcyan
+    keyword : brightcyan
+    keyword ; brightcyan
+    keyword [ brightcyan
+    keyword ] brightcyan
+    keyword { brightcyan
+    keyword } brightcyan
+    keyword . brightcyan
+    keyword , brightcyan
+
+# numbers
+    keyword whole \{0123456789\}\[0123456789\] brightgreen
+#    keyword whole \[0123456789\]\.\{0123456789\}\[0123456789\] brightgreen
+
+# built-ins (standart functions)
+    keyword whole countup cyan
+    keyword whole countdown cyan
+    keyword whole echo cyan
+    keyword whole readLine cyan
+    keyword whole inc cyan
+    keyword whole dec cyan
+    keyword whole succ cyan
+    keyword whole pred cyan
+    keyword whole ord cyan
+    keyword whole items cyan
+    keyword whole mitems cyan
+    keyword whole pairs cyan
+    keyword whole mpairs cyan
+    keyword whole add cyan
+    keyword whole len cyan
+    keyword whole low cyan
+    keyword whole high cyan
+    keyword whole new cyan
+
+# pragmas
+context exclusive {. .} gray
+
+# string literals
+context " " green
+    keyword %[*] brightgreen
+    keyword %c brightgreen
+    keyword %p brightgreen
+    keyword \\\{abtnvfr\} brightgreen
+
+context """ """ green
+
+# comments
+context exclusive #[ ]# brown
+context # \n brown
